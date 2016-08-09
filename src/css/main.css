@@ -261,6 +261,17 @@ header .main ul li a:hover, a:active {
     width: 100%;
 }
 
+.title {
+    display: inline-block;
+    font-family: "Microsoft YaHei" !important;
+    font-size: large;
+    padding: 0px 5px;
+    color: #fff;
+    background: #326331;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+
 /*上部*/
 
 .content-top {
@@ -346,7 +357,7 @@ header .main ul li a:hover, a:active {
         overflow: hidden;
     }
 
-    .content-top .left .title {
+    .content-top .left .elem-pic {
         width: 3.85rem;
         overflow: hidden;
     }
@@ -384,7 +395,7 @@ header .main ul li a:hover, a:active {
         display: none;
     }
 
-    .content-top .left .title {
+    .content-top .left .elem-pic {
         width: 3.26rem;
     }
 }
@@ -395,7 +406,7 @@ header .main ul li a:hover, a:active {
         float: none;
     }
 
-    .content-top .left .xyxw .title {
+    .content-top .left .xyxw .elem-pic {
         width: 100%;
     }
 
@@ -409,7 +420,7 @@ header .main ul li a:hover, a:active {
         float: none;
     }
 
-    .content-top .left .ksdl .title {
+    .content-top .left .ksdl .elem-pic {
         width: 100%;
     }
 }
@@ -454,14 +465,15 @@ header .main ul li a:hover, a:active {
     height: 1.95rem;
     display: block;
     float: left;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    border-radius: 10px;
+    /*border-left: 1px solid #ccc;*/
+    /*border-right: 1px solid #ccc;*/
+    /*border-bottom: 1px solid #ccc;*/
+    /*border-radius: 10px;*/
     margin-left: 4px;
+    margin-bottom: 10px;
 }
 
-.elem .title {
+.elem .elem-pic {
     display: block;
     float: left;
     width: 0.79rem;
@@ -505,7 +517,7 @@ header .main ul li a:hover, a:active {
         margin-right: 0px;
     }
 
-    .elem .content .title {
+    .elem .content .elem-pic {
         display: none;
     }
 }
@@ -517,7 +529,7 @@ header .main ul li a:hover, a:active {
 }
 
 @media only screen and (max-width: 21.875em) {
-    .elem .content .title {
+    .elem .content .elem-pic {
         display: none;
     }
 }
@@ -551,11 +563,11 @@ header .main ul li a:hover, a:active {
     margin: 0px 2px;
 }
 
-.content-middle .rcpy .title {
+.content-middle .rcpy .elem-pic {
     background: url('../img/rcpy-pic.jpg') no-repeat;
 }
 
-.content-middle .kyxs .title {
+.content-middle .kyxs .elem-pic {
     background: url('../img/kyxs-pic.jpg') no-repeat;
 }
 
@@ -617,15 +629,15 @@ header .main ul li a:hover, a:active {
     display: block;
 }
 
-.content-bottom .xydt .title {
+.content-bottom .xydt .elem-pic {
     background: url('../img/xydt-pic.jpg') no-repeat;
 }
 
-.content-bottom .zsjy .title {
+.content-bottom .zsjy .elem-pic {
     background: url('../img/zsjy-pic.jpg') no-repeat;
 }
 
-.content-bottom .xxgg .title {
+.content-bottom .xxgg .elem-pic {
     background: url('../img/xxgg-pic.jpg') no-repeat;
 }
 
