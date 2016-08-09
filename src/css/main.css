@@ -1,0 +1,694 @@
+﻿/*****************
+* 页面样式
+******************/
+
+/*================
+  基本样式
+  ================*/
+
+html {
+    font-size: 625%; /*这时候一个rem=100px*/
+    color: #222;
+}
+
+::selection {
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/*================
+  工具样式
+  ================*/
+
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==============
+   浏览器更新提示
+   ==============*/
+
+.browserupgrade {
+    margin: 0rem;
+    padding: 0.1rem;
+    background: #ccc;
+}
+
+/*=============
+  自定义页面样式
+  =============*/
+
+body {
+    font-size: 0.12rem;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+a {
+    color: #326331;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #993333;
+    text-decoration: underline;
+}
+
+/*外包容器*/
+
+div.main {
+    width: 10rem;
+}
+
+@media only screen and (max-width: 62.5em) {
+    div.main {
+        width: 100%;
+    }
+}
+
+/*网站头部*/
+
+header {
+    width: 100%;
+}
+
+header .top .head-pic {
+    width: 100%;
+}
+
+header .top .head-pic img + img {
+    display: none;
+}
+
+header .top .head-pic img {
+    width: 100%;
+    height: 100%;
+}
+
+header .main {
+    line-height: 0.26rem;
+    padding: 0px 0.15rem;
+    color: #fff;
+    background: #277227;
+    background: -webkit-linear-gradient(#42a042, #1c561c); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#42a042, #1c561c); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#42a042, #1c561c); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#42a042, #1c561c); /* 标准的语法（必须放在最后） */
+    border-top: 1px solid #c4daa4;
+    border-bottom: 1px solid #c4daa4;
+    border-radius: 5px;
+}
+
+header .main ul {
+    text-align: center;
+}
+
+header .main ul li {
+    display: inline-block;
+}
+
+header .main ul li + li {
+    border-left: 2px solid #2e4d29;
+    margin-left: -7px;
+}
+
+header .main ul li a {
+    display: inline-block;
+    padding: 0px 0.14rem;
+    color: #ffffff;
+}
+
+header .main ul li a:hover, a:active {
+    color: #993333;
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 43.125em) {
+    header .main {
+        margin-top: -5px;
+    }
+}
+
+@media only screen and (max-width: 62.5em) {
+    header .main ul li:nth-child(1),
+    header .main ul li:nth-child(5),
+    header .main ul li:nth-child(10),
+    header .main ul li:nth-child(11),
+    header .main ul li:nth-child(12),
+    header .main ul li:nth-child(13) {
+        display: none;
+    }
+
+    header .main ul li + li {
+        border: none;
+        margin: 0px 13px;
+    }
+}
+
+@media only screen and (max-width: 50em) {
+    header .main ul li + li {
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 43.0625em) {
+    header .top .head-pic img:first-child {
+        display: none;
+    }
+
+    header .top .head-pic img:nth-child(2) {
+        display: block;
+    }
+
+    header .top .head-pic {
+        max-height: 1.28rem;
+    }
+
+    header .main ul li a {
+        padding: 0px 0.04rem;
+    }
+}
+
+@media only screen and (max-width: 30.625em) {
+    header .top .head-pic img:nth-child(2) {
+        display: none;
+    }
+
+    header .top .head-pic img:nth-child(3) {
+        display: block;
+    }
+
+    header .main ul li:nth-child(3),
+    header .main ul li:nth-child(9) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 25.8125em) {
+    header .main {
+        padding: 0px;
+    }
+
+    header .main ul li a {
+        padding: 0px;
+    }
+}
+
+/*网站主要内容*/
+
+.container {
+    width: 100%;
+}
+
+/*上部*/
+
+.content-top {
+    width: 100%;
+}
+
+.content-top .left {
+    width: 49%;
+    display: block;
+    float: left;
+}
+
+.content-top .left .xyxw-pic {
+    display: block;
+    float: left;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.content-top .left .xyxw ul {
+    display: block;
+    float: left;
+    max-width: 3rem;
+}
+
+.content-top .left .xyxw ul:first-child li {
+    height: 0.22rem;
+}
+
+.content-top .left .xyxw ul a {
+    display: inline-block;
+    max-width: 2.82rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.content-top .left .xyxw ul:last-child li {
+    padding: 3px 0 1px;
+}
+
+.content-top .left .xyxw .li-pic {
+    display: inline-block;
+    width: 0.16rem;
+    height: 0.22rem;
+    padding: 0px;
+    background: url('../img/li.gif') no-repeat;
+}
+
+.content-top .left .ksdl li {
+    display: block;
+    float: left;
+}
+
+.content-top .left .ksdl li a {
+    display: inline-block;
+    width: 0.80rem;
+    height: 0.24rem;
+}
+
+.content-top .right {
+    width: 51%;
+    display: block;
+    float: left;
+}
+
+.content-top .right .school-pic {
+    display: block;
+    width: 5.02rem;
+    height: 2.55rem;
+    border: 4px solid #386d14;
+    background: url(../img/school-pic.png) no-repeat;
+    margin-top: 3px;
+}
+
+@media only screen and (max-width: 62.5em) {
+    .content-top .left {
+        width: 100%;
+    }
+
+    .content-top .left .xyxw {
+        float: left;
+        overflow: hidden;
+    }
+
+    .content-top .left .title {
+        width: 3.85rem;
+        overflow: hidden;
+    }
+
+    .content-top .left .ksdl {
+        float: left;
+        overflow: hidden;
+    }
+
+    .content-top .right {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 43.125em) and (max-width: 62.5em) {
+    .content-top .left .xyxw {
+        width: 50%;
+    }
+
+    .content-top .left .xyxw ul a {
+        width: 2rem;
+    }
+
+    .content-top .left .ksdl {
+        width: 50%;
+    }
+
+    .content-top .left .ksdl li a {
+        margin: 0px 0.10rem;
+    }
+}
+
+@media only screen and (min-width: 43.125em) and (max-width: 50em) {
+    .content-top .left .xyxw ul:nth-child(2) {
+        display: none;
+    }
+
+    .content-top .left .title {
+        width: 3.26rem;
+    }
+}
+
+@media only screen and (max-width: 43.0625em) {
+    .content-top .left .xyxw {
+        max-width: 4.82rem;
+        float: none;
+    }
+
+    .content-top .left .xyxw .title {
+        width: 100%;
+    }
+
+    .content-top .left .xyxw ul:last-child {
+        float: right;
+        margin-right: 5px;
+    }
+
+    .content-top .left .ksdl {
+        max-width: 4.82rem;
+        float: none;
+    }
+
+    .content-top .left .ksdl .title {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 31em) {
+    .content-top .left .ksdl ul {
+        margin-left: 3px;
+    }
+
+    .content-top .left .ksdl li a {
+        width: 0.77rem;
+        margin: 0px
+    }
+}
+
+@media only screen and (max-width: 30.625em) {
+    .content-top .left .xyxw ul a {
+        max-width: 2.4rem;
+    }
+
+    .content-top .left .xyxw ul:nth-child(2) {
+        /*display: none;*/
+    }
+}
+
+@media only screen and (max-width: 27.5em) {
+    .content-top .left .xyxw ul:nth-child(2) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 22.5em) {
+    .content-top .left .xyxw-pic {
+        display: none;
+    }
+}
+
+/*中部及下部*/
+
+.elem {
+    width: 32.7%;
+    height: 1.95rem;
+    display: block;
+    float: left;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 4px;
+}
+
+.elem .title {
+    display: block;
+    float: left;
+    width: 0.79rem;
+    height: 1.57rem;
+}
+
+.elem ul li {
+    display: inline-block;
+    width: 2.26rem;
+    height: 0.22rem;
+    margin-left: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.elem ul li a.more {
+    text-align: right;
+    float: right;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 62.5em) {
+    .elem {
+        width: 3.8rem;
+        float: none;
+        margin-top: 5px;
+        border-top: 1px solid #ccc;
+    }
+}
+
+@media only screen and (max-width: 50em) {
+    .elem {
+        width: 3.35rem;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (min-width: 30.6875em) and (max-width: 43.0625em) {
+    .elem {
+        width: 99%;
+        margin-left: 2px;
+        margin-right: 0px;
+    }
+
+    .elem .content .title {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 30.625em) {
+    .elem {
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 21.875em) {
+    .elem .content .title {
+        display: none;
+    }
+}
+
+/*中部*/
+
+.content-middle {
+    display: block;
+    margin: 8px 0 10px;
+}
+
+.content-middle .xyjd .xyjd-top img:first-child {
+    width: 0.63rem;
+    height: 0.63rem;
+    display: block;
+    float: left;
+    border: 1px solid #ccc;
+}
+
+.content-middle .xyjd .xyjd-top img:last-child {
+    width: 2.52rem;
+    height: 0.63rem;
+    display: block;
+    float: left;
+    border: 1px solid #ccc;
+}
+
+.content-middle .xyjd .xyjd-content p {
+    text-indent: 2em;
+    display: block;
+    margin: 0px 2px;
+}
+
+.content-middle .rcpy .title {
+    background: url('../img/rcpy-pic.jpg') no-repeat;
+}
+
+.content-middle .kyxs .title {
+    background: url('../img/kyxs-pic.jpg') no-repeat;
+}
+
+@media only screen and (min-width: 30.6875em) and (max-width: 62.5em) {
+    .content-middle:before,
+    .content-middle:after {
+        content: "";
+        display: block;
+    }
+
+    .content-middle:after {
+        clear: none;
+    }
+
+    .content-middle {
+        width: 49.5%;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .content-middle .xyjd .xyjd-content p {
+        max-width: 3.19rem;
+    }
+}
+
+@media only screen and (min-width: 30.6875em) and (max-width: 43.0625em) {
+    .content-middle {
+        margin-right: 2px;
+    }
+
+    .content-middle .xyjd .xyjd-top {
+        display: none;
+    }
+
+    .content-middle .xyjd .xyjd-content p {
+        margin: 0.1rem 0.2rem 0px 0.05rem;
+    }
+}
+
+@media only screen and (min-width: 21.9375em) and (max-width: 30.625em) {
+    .content-middle .xyjd .xyjd-content p {
+        width: 3.23rem;
+    }
+}
+
+@media only screen and (max-width: 21.875em) {
+    .content-middle .xyjd .xyjd-top {
+        display: none;
+    }
+
+    .content-middle .xyjd .xyjd-content p {
+        margin: 0.1rem 0.15rem;
+    }
+}
+
+/*下部*/
+
+.content-bottom {
+    display: block;
+}
+
+.content-bottom .xydt .title {
+    background: url('../img/xydt-pic.jpg') no-repeat;
+}
+
+.content-bottom .zsjy .title {
+    background: url('../img/zsjy-pic.jpg') no-repeat;
+}
+
+.content-bottom .xxgg .title {
+    background: url('../img/xxgg-pic.jpg') no-repeat;
+}
+
+@media only screen and (min-width: 30.6875em) and (max-width: 62.5em) {
+    .content-bottom {
+        width: 49.5%;
+        float: left;
+        margin: 8px 0 10px;
+    }
+}
+
+@media only screen and (max-width: 30.625em) {
+
+}
+
+/*快速链接*/
+
+.kslj {
+    width: 99.6%;
+    height: 0.3rem;
+    border: 1px solid #ccc;
+    margin: 6px 0px 6px;
+    padding-top: 5px;
+}
+
+.kslj .sele {
+    display: inline-block;
+    width: 33%;
+    height: 0.19rem;
+    text-align: center;
+}
+
+.kslj .sele + .sele {
+    margin-left: -5px;
+}
+
+.kslj .sele select {
+    height: 100%;
+}
+
+@media only screen and (max-width: 43.0625em) {
+    .kslj {
+        display: none;
+    }
+}
+
+/*底部*/
+
+footer {
+    width: 100%;
+    padding: 0.03rem 0px 0px;
+    background: url('../img/foot_b.jpg') repeat-x;
+}
+
+footer p {
+    text-align: center;
+    color: #808080;
+}
+
+footer p span {
+    display: inline-block;
+}
+
+footer p span + span {
+    margin-left: 0.20rem;
+}
