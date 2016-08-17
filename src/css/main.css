@@ -101,8 +101,8 @@ li {
 
 body {
     font-family: "Microsoft YaHei" !important;
-    font-size: 0.12rem;
-    line-height: 1.5;
+    font-size: 0.16rem;
+    /*line-height: 1.5;*/
     background-color: #fff;
 }
 
@@ -119,7 +119,7 @@ a:hover, a:active {
 /*外包容器*/
 
 div.main {
-    width: 10rem;
+    max-width: 10rem;
 }
 
 @media only screen and (max-width: 62.5em) {
@@ -496,7 +496,7 @@ header .main ul li a:hover, a:active {
     width: 2.26rem;
     height: 0.22rem;
     margin-left: 5px;
-    border-bottom: 1px solid #ccc;
+    /*border-bottom: 1px solid #ccc;*/
 }
 
 .elem ul li a.more {
