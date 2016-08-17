@@ -320,11 +320,16 @@ header .main ul li a:hover, a:active {
 }
 
 .content-top .left .xyxw .li-pic {
-    display: inline-block;
+    /*display: inline-block;*/
+    display: none;
     width: 0.16rem;
     height: 0.22rem;
     padding: 0px;
     background: url('../img/li.gif') no-repeat;
+}
+
+.content-top .left .ksdl {
+    margin-top: 8px;
 }
 
 .content-top .left .ksdl li {
