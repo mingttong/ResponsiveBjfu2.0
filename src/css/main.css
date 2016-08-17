@@ -100,6 +100,7 @@ li {
   =============*/
 
 body {
+    font-family: "Microsoft YaHei" !important;
     font-size: 0.12rem;
     line-height: 1.5;
     background-color: #fff;
@@ -264,7 +265,7 @@ header .main ul li a:hover, a:active {
 .title {
     display: inline-block;
     font-family: "Microsoft YaHei" !important;
-    font-size: large;
+    font-size: 18px;
     padding: 0px 5px;
     color: #fff;
     background: #326331;
@@ -282,6 +283,10 @@ header .main ul li a:hover, a:active {
     width: 49%;
     display: block;
     float: left;
+}
+
+.content-top .left .xyxw {
+    margin-top: 8px;
 }
 
 .content-top .left .xyxw-pic {
@@ -342,9 +347,8 @@ header .main ul li a:hover, a:active {
     display: block;
     width: 5.02rem;
     height: 2.55rem;
-    border: 4px solid #386d14;
     background: url(../img/school-pic.png) no-repeat;
-    margin-top: 3px;
+    margin-top: 8px;
 }
 
 @media only screen and (max-width: 62.5em) {
@@ -658,7 +662,6 @@ header .main ul li a:hover, a:active {
 .kslj {
     width: 99.6%;
     height: 0.3rem;
-    border: 1px solid #ccc;
     margin: 6px 0px 6px;
     padding-top: 5px;
 }
