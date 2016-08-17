@@ -186,8 +186,10 @@ header .main ul li a {
 }
 
 header .main ul li a:hover, a:active {
-    color: #993333;
-    text-decoration: underline;
+    color: #fff;
+    text-decoration: none;
+    background: #326331;
+    border-radius: 5px;
 }
 
 @media only screen and (min-width: 43.125em) {
