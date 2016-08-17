@@ -484,16 +484,13 @@ header .main ul li a:hover, a:active {
 /*中部及下部*/
 
 .elem {
-    width: 100%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    width: 33.3332%;
     display: block;
     float: left;
-}
-
-.elem .elem-pic {
-    display: none;
-    float: left;
-    width: 0.79rem;
-    height: 1.57rem;
+    padding: 10px;
 }
 
 .elem ul li {
@@ -503,13 +500,7 @@ header .main ul li a:hover, a:active {
 }
 
 .elem ul li a.more {
-    text-align: right;
-    float: right;
     text-decoration: underline;
-}
-
-.one-third {
-    width: 33.3332%;
 }
 
 
@@ -553,15 +544,14 @@ header .main ul li a:hover, a:active {
     /*}*/
 /*}*/
 
-/*中部*/
-
 .content-middle {
     width: 100%;
     /*margin: 8px 0 10px;*/
 }
 
-.content-middle .xyjd .xyjd-top {
-    display: none;
+.content-middle .elem:first-child,
+.content-bottom .elem:first-child {
+    padding-left: 20px;
 }
 
 /*.content-middle .xyjd .xyjd-top img:first-child {*/
@@ -644,8 +634,6 @@ header .main ul li a:hover, a:active {
         /*margin: 0.1rem 0.15rem;*/
     /*}*/
 /*}*/
-
-/*下部*/
 
 .content-bottom {
     width: 100%;
