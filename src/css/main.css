@@ -103,6 +103,10 @@ li {
   自定义页面样式
   =============*/
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Microsoft YaHei" !important;
     font-size: 0.16rem;
@@ -341,6 +345,10 @@ header .main ul li a:hover, a:active {
     padding-top: 0.16rem;
 }
 
+.content-top .right img {
+    width: 100%;
+}
+
 /*@media only screen and (max-width: 62.5em) {*/
     /*.content-top .left {*/
         /*width: 100%;*/
@@ -457,12 +465,20 @@ header .main ul li a:hover, a:active {
     float: left;
     width: 100%;
     box-sizing: border-box;
-    padding-left: 0.2rem;
+    padding-left: 20px;
 }
 
 .ksdl ul {
     float: left;
     width: 100%;
+}
+
+.ksdl ul:first-child {
+    -webkit-margin-before: 1em;
+}
+
+.ksdl ul:last-child {
+    -webkit-margin-after: 1em;
 }
 
 .ksdl li {
@@ -474,6 +490,8 @@ header .main ul li a:hover, a:active {
 .ksdl li a {
     display: inline-block;
     /*line-height: 1.5em;*/
+    padding: 0.25em 0px;
+    padding-right: 5px;
 }
 
 /*中部及下部*/
