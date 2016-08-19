@@ -122,7 +122,7 @@ a {
 
 a:hover, a:active {
     color: #993333;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /*外包容器*/
@@ -276,7 +276,7 @@ header .main ul li a:hover, a:active {
 .title {
     display: inline-block;
     font-family: "Microsoft YaHei" !important;
-    font-size: 18px;
+    font-size: 22px;
     padding: 0px 5px;
     color: #fff;
     background: #326331;
@@ -518,7 +518,14 @@ header .main ul li a:hover, a:active {
 }
 
 .unit ul li a.more {
-    text-decoration: underline;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #993333;
+}
+
+.unit ul li a.more:hover {
+    color: #ec2330;
 }
 
 
@@ -589,7 +596,6 @@ header .main ul li a:hover, a:active {
 /*}*/
 
 .content-middle .xyjd .xyjd-content p {
-    text-indent: 2em;
     display: block;
 }
 
